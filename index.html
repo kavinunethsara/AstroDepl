@@ -4,7 +4,7 @@ layout: default
 <div class="slides">
   <div class="slide">
   <section class="hero">
-    <img src="/assets/img/logo.png"></img>
+    <img src="assets/img/logo.png"></img>
     <h1> Anadameth Astronomy </h1>
     <h2> Society </h2>
     <h3 class="desktop"> R/ Balangoda Ananda Maithreya Central College </h3>
@@ -17,7 +17,7 @@ layout: default
       <h1> Featured News </h1>
       <section class="grid" id="g1">
         {% for post in site.posts limit:5 %}
-        <a href="{{post.url}}" class="card {% if forloop.first %}spanrow2{% endif %}" style="background-image:url('/assets/img/articles/{{post.thumbnail}}');">
+        <a href="{{post.url}}" class="card {% if forloop.first %}spanrow2{% endif %}" style="background-image:url('assets/img/articles/{{post.thumbnail}}');">
           <label>
             <b>{{post.title}}</b>
             <p>{{post.excerpt}}</p>
@@ -32,7 +32,7 @@ layout: default
     <page>
       <h1 style="text-align:center;"> TouTube Channel </h1>
       <section class="thumbnail-grid" id="g2">
-        <div class="thumbnail" style="background-image:url('/assets/img/articles/badge.jpg');background-size:cover;"></div>
+        <div class="thumbnail" style="background-image:url('assets/img/articles/badge.jpg');background-size:cover;"></div>
         <div class="thumbnail"></div>
         <div class="thumbnail"></div>
         <a class="viewmore" target="" href="https://www.youtube.com/@anandamethastronomicalsociety">View More</a>
