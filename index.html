@@ -17,7 +17,7 @@ layout: default
       <h1> Featured News </h1>
       <section class="grid" id="g1">
         {% for post in site.posts limit:5 %}
-        <a href="{{post.url}}" class="card {% if forloop.first %}spanrow2{% endif %}" style="background-image:url('assets/img/articles/{{post.thumbnail}}');">
+        <a href="{{site.baseurl}}{{post.url}}" class="card {% if forloop.first %}spanrow2{% endif %}" style="background-image:url('assets/img/articles/{{post.thumbnail}}');">
           <label>
             <b>{{post.title}}</b>
             <p>{{post.excerpt}}</p>

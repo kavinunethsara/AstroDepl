@@ -1,7 +1,7 @@
 
 <mobilenav></mobilenav>
 <nav>
-  <a href="/index.html" {% if (page.url == "/index.html" or page.url == "/") %} class="active" {% endif %}>Home</a>
-  <a href="/news.html" {% if page.url == "/news.html" %} class="active" {% endif %}>News</a>
-  <a href="/about.html" {% if page.url == "/about.html" %} class="active" {% endif %}>About</a>
+  <a href="{{site.baseurl}}index.html" {% if (page.url == "/index.html" or page.url == "/") %} class="active" {% endif %}>Home</a>
+  <a href="{{site.baseurl}}news.html" {% if page.url == "/news.html" %} class="active" {% endif %}>News</a>
+  <a href="{{site.baseurl}}about.html" {% if page.url == "/about.html" %} class="active" {% endif %}>About</a>
 </nav>

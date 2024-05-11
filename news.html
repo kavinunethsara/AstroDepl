@@ -7,7 +7,7 @@ layout: default
       <h1> News and Articles </h1>
       <section class="grid noanimation">
         {% for post in site.posts %}
-        <a href="{{post.url}}" class="card" style="background-image:url('assets/img/articles/{{post.thumbnail}}');background-size:cover;">
+        <a href="{{site.baseurl}}{{post.url}}" class="card" style="background-image:url('assets/img/articles/{{post.thumbnail}}');background-size:cover;">
           <label>
             <b>{{post.title }}</b>
             <p>{{post.excerpt}}</p>
