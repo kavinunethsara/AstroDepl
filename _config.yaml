@@ -1,1 +1,27 @@
 baseurl     : "/AstroDepl/"
+
+prose:
+    rooturl: _posts
+    siteurl: "https://kavinunethsara.github.io/AstroDepl/"
+    media: "assets/img/articles"
+
+    metadata:
+        _posts:
+            - name: "layout"
+            field:
+                element: "hidden"
+                value: "post"
+            - name: "title"
+            field:
+                label: "Title"
+                element: "text"
+            - name: "thumbnail"
+            field:
+                label: "Thumbnail"
+                element: "text"
+                help: "Name of the image shown on the article icons"
+            - name: "cover-image"
+            field:
+                label: "Cover Image"
+                element: "text"
+                help: "Name of the image displayed with the heading"
