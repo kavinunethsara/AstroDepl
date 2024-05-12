@@ -7,15 +7,12 @@ nav {
   backdrop-filter: blur(0.3ch);
   border-right: 1px solid rgba(255, 204, 204, 0.3333333333);
 }
-
 nav a.active {
   font-weight: bold;
 }
-
 nav a.active, nav a:hover {
   color: #e6AA02;
 }
-
 nav a {
   display: flex;
   color: #e67702;
@@ -31,8 +28,7 @@ nav a {
   text-orientation: mixed;
   writing-mode: vertical-rl;
 }
-
-@media screen and (max-width: 600px), screen and (max-height: 600px) {
+@media screen and (max-width: 600px), screen and (max-height: 500px) {
   nav {
     display: flex;
     position: fixed;
@@ -61,6 +57,7 @@ nav a {
     writing-mode: unset;
   }
 }
+
 mobilenav {
   display: none;
   position: fixed;
@@ -77,12 +74,16 @@ mobilenav {
   backdrop-filter: blur(0.5ch);
   z-index: 99999;
 }
-
-@media screen and (max-width: 600px), screen and (max-height: 600px) {
+@media screen and (max-width: 600px), screen and (max-height: 500px) {
   mobilenav {
     display: flex;
   }
 }
-
+mobilenav svg {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
 
 /*# sourceMappingURL=nav.css.map */
