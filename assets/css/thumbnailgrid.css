@@ -8,7 +8,6 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-
 .thumbnail-grid .thumbnail {
   display: flex;
   background-color: white;
@@ -17,8 +16,9 @@
   margin: 1ch;
   height: 25ch;
   width: 25ch;
+  background-size: cover;
+  background-position: center;
 }
-
 .thumbnail-grid .viewmore {
   display: flex;
   position: absolute;
@@ -38,7 +38,6 @@
   color: white;
   text-decoration: none;
 }
-
 @media screen and (max-width: 600px) {
   .thumbnail-grid {
     flex-direction: column;
@@ -57,6 +56,5 @@
     background: radial-gradient(circle at 50% 100%, orange, 20%, transparent, 80%, transparent);
   }
 }
-
 
 /*# sourceMappingURL=thumbnailgrid.css.map */
